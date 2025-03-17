@@ -102,6 +102,7 @@ const WSIViewer = () => {
                 ref={imageRef}
                 src={`./${imageData?.inference_results?.filename}`}
                 alt="WSI"
+                loading="lazy"
                 className="w-full md:w-[800px] h-auto md:h-[500px]"
                 onLoad={onImageLoad}
               />
@@ -135,6 +136,7 @@ const WSIViewer = () => {
             <img
               src={`/${imageData?.inference_results?.filename}`}
               alt="WSI Thumbnail"
+              loading="lazy"
               className="w-full h-full object-cover"
             />
             {/* Viewport Indicator */}
